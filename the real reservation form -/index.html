@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation form</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <div id="blue-background"></div>
+
+    <div id="reservation-container">
+        
+        <h1>Reservation Form</h1>
+
+        <form id="reservation-form">
+            <div class="info-item">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+
+            <div class="info-item">
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Phone Number" required id="quantity" >
+            </div>
+
+            <div class="info-item">
+                <input type="number" placeholder="Number of people" required id="second-quantity">
+                <input type="text" placeholder="Reservation Time" >
+            </div>
+
+            <div id="info-choice">
+                <select class="mySelect">
+                    <option value="" disabled selected>Style of Reservation</option>
+                    <option value="">Style 1 (Theatrical Style)</option>
+                    <option value="">Style 2</option>
+                    <option value="">Style 3</option>
+                </select>
+            </div>
+
+            <div id="info-choice">
+                <select class="mySelect" multiple size="2">
+                    <option value="" disabled selected>Room Reservation</option>
+                    <option value="">Room A</option>
+                    <option value="">Room B</option>
+                </select>
+            </div>
+
+
+            <div id="info-choice">
+                <select class="mySelect">
+                    <option value="" disabled selected>Coffee and Food offers</option>
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                    <option value="">option 3</option>
+                </select>
+            </div>
+
+            <div id="info-choice">
+                <textarea placeholder="what do have in mind"></textarea>
+            </div>
+
+
+            <div id="submint-container">
+                <button class="submit-btn" type="submit">submit</button>
+                <p>Price : <span>000$</span></p>
+            </div>
+
+        </form>
+
+
+        <div class="social-media">
+            <a href="#"> <img class="icon" src="icons/instagram.svg" alt="instagram-svg"></a>
+            <a href="#"><img class="icon" src="icons/linkedin.svg" alt="linkedin-svg"></a>
+            <a href="#"><img class="icon" src="icons/facebook.svg" alt="facebook-svg"></a>
+        </div>
+    </div>
+
+
+<script src="index.js"></script>
+
+
+</body>
+
+</html>
